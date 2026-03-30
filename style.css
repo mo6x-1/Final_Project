@@ -1,3 +1,20 @@
+.hero .row {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .hero .row {
+    flex-direction: row;
+  }
+  .hero .col-md-7 {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+  .hero .col-md-5 {
+    align-items: flex-end !important;
+    text-align: right !important;
+  }
+}
 .skills-section {
   background: linear-gradient(120deg, #f8fafc 60%, #e0e7ff 100%);
   padding: 60px 0 40px 0;
@@ -44,6 +61,7 @@ body {
 }
 
 
+
 .hero,
 .skills-section,
 #about,
@@ -54,6 +72,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero .carousel {
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  margin-bottom: 0.7rem;
+}
+
+.hero p.lead {
+  margin-bottom: 1.2rem;
+}
+
+.hero .btn-glow {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .hero .carousel {
+    max-width: 160px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p.lead {
+    font-size: 1rem;
+  }
 }
 
 .hero {
