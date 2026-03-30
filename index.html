@@ -18,22 +18,56 @@
     </button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-user"></i> About</a></li>
-        <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
       <button id="modeBtn" class="btn btn-outline-light ms-3">🌙</button>
     </div>
   </div>
 </nav>
 
+
 <!-- HERO -->
-<section class="hero text-center d-flex align-items-center">
-  <div class="container">
-    <h1 class="display-2 fw-bold animate fade-in">Hi, I'm Mido 🚀</h1>
-    <p class="lead fade-in delay-1">Frontend Developer | UI Designer</p>
-    <a href="projects.html" class="btn btn-glow fade-in delay-2">View Work</a>
+
+<section id="home" class="hero d-flex align-items-center">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center justify-content-center flex-md-nowrap flex-wrap">
+      <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end justify-content-center text-center text-md-end mb-4 mb-md-0">
+        <div class="d-flex align-items-center gap-3 justify-content-center justify-content-md-end flex-wrap mb-2">
+          <h1 class="display-2 fw-bold animate fade-in mb-0">Hi, I'm Mohamed</h1>
+        </div>
+        <p class="lead fade-in delay-1 mt-3 mb-0">Frontend Developer | UI Designer</p>
+      </div>
+      <div class="col-12 col-md-5 d-flex flex-column align-items-center justify-content-center text-center">
+        <!-- Bootstrap Carousel -->
+        <div id="heroCarousel" class="carousel slide fade-in delay-2" data-bs-ride="carousel" style="max-width:260px;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&h=400" class="d-block w-100 rounded shadow" alt="Slide 1" style="max-width:260px; max-height:260px; margin:auto; object-fit:cover;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=400&h=400" class="d-block w-100 rounded shadow" alt="Slide 2" style="max-width:260px; max-height:260px; margin:auto; object-fit:cover;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=400&h=400" class="d-block w-100 rounded shadow" alt="Slide 3" style="max-width:260px; max-height:260px; margin:auto; object-fit:cover;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 mt-4 text-center">
+        <a href="#projects" class="btn btn-glow fade-in delay-2">View Work</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -89,6 +123,111 @@
           <a href="https://angular.io/" target="_blank" rel="noopener"><i class="fab fa-angular fa-3x text-danger"></i></a>
           <h5><a href="https://angular.io/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">Angular</a></h5>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-5 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mido" class="rounded-circle shadow fade-in" style="width: 220px; height: 220px; object-fit: cover;">
+      </div>
+      <div class="col-md-7">
+        <h2 class="mb-3 fade-in delay-1">About Me</h2>
+        <p class="lead fade-in delay-2">I'm <b>Mohamed</b>, a passionate front-end developer and UI designer. I love building beautiful, modern, and responsive websites that provide a great user experience. My web development journey started as exploration, then grew into a true passion for design and programming.</p>
+        <ul class="list-unstyled mt-4 fade-in delay-3">
+          <li><i class="fas fa-check-circle text-success me-2"></i>Expert in HTML, CSS, JavaScript, Bootstrap</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i>UI/UX Design Enthusiast</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i>Problem Solver & Fast Learner</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i>Team Player & Communicator</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="py-5 mt-5">
+  <div class="container">
+    <h2 class="text-center mb-4">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4 fade-in">
+        <div class="card project-card h-100 shadow">
+          <img src="img/Screenshot 2026-03-27 013501.png" class="card-img-top" alt="Project 1" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">Online Restaurant Website</h5>
+            <p class="card-text">A modern responsive restaurant website built with HTML, CSS, Bootstrap, and JavaScript.</p>
+            <a href="https://mo6x-1.github.io/El-reda_Elgamil/" class="btn btn-glow">View Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 fade-in delay-1">
+        <div class="card project-card h-100 shadow">
+          <img src="img/Screenshot 2026-03-27 013635.png" class="card-img-top" alt="Project 2" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">furni website</h5>
+            <p class="card-text">A set of beautiful and reusable UI components for web to furniture, designed for speed and flexibility in by .</p>
+            <a href="https://mo6x-1.github.io/onsite-5/" class="btn btn-glow">View Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 fade-in delay-2">
+        <div class="card project-card h-100 shadow">
+          <img src="img/Screenshot 2026-03-27 at 01-34-11 onesite-2.png" class="card-img-top" alt="Project 3" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">food menu website</h5>
+            <p class="card-text">It is a section that is a food menu designed to be both beautiful and flexible.</p>
+            <a href="https://mo6x-1.github.io/On-Site-2/" class="btn btn-glow">View Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 fade-in delay-3">
+        <div class="card project-card h-100 shadow">
+          <img src="img/Screenshot 2026-03-27 031457.png" class="card-img-top" alt="Project 4" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">link lance </h5>
+            <p class="card-text">LinkLance is my own website and that of my team. It's a fully functional website, but without any freelancers..</p>
+            <a href="https://mo6x-1.github.io/link-lance/" class="btn btn-glow">View Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-5 mt-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fade-in">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-7 fade-in delay-1">
+        <form onsubmit="return validateForm()" class="bg-white p-4 rounded shadow-sm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-glow w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center mt-4 fade-in delay-2">
+      <p><i class="fas fa-envelope me-2"></i>mido@email.com</p>
+      <p><i class="fas fa-phone me-2"></i>+20 123 456 7890</p>
+      <div>
+        <a href="#" class="text-dark me-3"><i class="fab fa-github fa-lg"></i></a>
+        <a href="#" class="text-primary me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="#" class="text-info"><i class="fab fa-twitter fa-lg"></i></a>
       </div>
     </div>
   </div>
