@@ -125,7 +125,7 @@ body.dark-mode .skills-section,
 body.dark-mode #about,
 body.dark-mode #projects,
 body.dark-mode #contact {
-  background: #18191a !important;
+  background: #40464d !important;
   color: #e4e6eb !important;
 }
 
@@ -136,7 +136,7 @@ body.dark-mode .navbar-colored {
 }
 
 body.dark-mode .navbar-dark .navbar-nav .nav-link {
-  color: #e4e6eb !important;
+  color: #454c5f !important;
 }
 body.dark-mode .navbar-dark .navbar-nav .nav-link.active,
 body.dark-mode .navbar-dark .navbar-nav .nav-link:focus,
